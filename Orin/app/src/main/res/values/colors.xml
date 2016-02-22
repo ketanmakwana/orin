@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#111111</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#111111</color>
+    <color name="colorWhiteFont">#FFFFFF</color>
+    <color name="colorGray">#D9D9CA</color>
+    <color name="g_plus_color">#CD1515</color>
+    <color name="fb_color">#3B5998</color>
+    <color name="twitter_color">#2DAAE2</color>
+    <color name="seekbarColor">#E5E5E5</color>
+
+</resources>

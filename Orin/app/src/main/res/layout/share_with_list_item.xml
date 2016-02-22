@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareWithLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:clickable="true"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imgTwitter"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:clickable="true"
+            android:src="@drawable/twitter_round_color" />
+
+        <ImageView
+            android:id="@+id/imgGPlus"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:clickable="true"
+            android:src="@drawable/google_plus_icon" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.developermaniax.orin.Settings"
+    tools:showIn="@layout/activity_settings">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Accounts"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="orin@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"
+        android:text="log out"
+        android:textColor="@color/colorWhiteFont"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/textView14"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Download Location"
+        android:textColor="@color/colorBlack"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView15"
+        android:background="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/txtDownloadLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="orin@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/txtDownloadLocation"
+        android:layout_below="@+id/button2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"
+        android:text="log out"
+
+        android:textColor="@color/colorWhiteFont"
+        android:textSize="10sp" />
+
+
+
+</RelativeLayout>

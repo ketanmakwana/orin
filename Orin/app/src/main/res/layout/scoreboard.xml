@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.developermaniax.orin.Scoreboard">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Main Tera Hero (2015)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSongArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arjit Singh"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/txtBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:src="@drawable/arow_back"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/txtSearch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sarch"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/txtStepBackward"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/imgPause"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/imgPause"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pause"
+                android:textColor="@color/colorWhiteFont"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imgProgressbar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/progress_circle" />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgProgressbar"
+                android:gravity="center"
+                android:text="02:30/5:00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/txtStepForward"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/imgPause"
+                android:src="@drawable/backword"
+                android:textColor="@color/colorWhiteFont"
+                android:textSize="40sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.developermaniax.orin.component.FontView
+        android:id="@+id/txtScoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_check"
+        android:textColor="@color/colorWhiteFont"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imgartist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtScoreboard"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_below="@+id/imgartist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:text="Write a Review:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorWhiteFont" />
+
+            <EditText
+                android:id="@+id/edtReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_borders"
+                android:minHeight="60dp"
+                android:singleLine="false"
+                android:textColor="@color/colorWhiteFont" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="Submit" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="Akon"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorWhiteFont" />
+
+    <TextView
+        android:id="@+id/txtSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArtistName"
+        android:layout_centerHorizontal="true"
+        android:text="Konvicted(2005)-Lonely"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhiteFont" />
+
+
+</RelativeLayout>
